@@ -1,0 +1,45 @@
+<html>
+<head>
+<script language="javascript">
+	function trier(pIndex, pTablo, pLongueur) {
+	//trie un tableau � une dimension contenant, en continu, les multiples lignes d'un tableau � trois colonnes
+	//le tri s'effectue sur la colonne de num�ro d'ordre pIndex
+	  for (i=0;i<pLongueur; i+=3) //parcours de la totalit�, de 3 cases en 3 cases
+		for (j=i+3;j<pLongueur;j+=3)  //parours de toutes les cellules restantes pour comparaison
+		    
+		   if (pTablo[i+pIndex].innerHTML>pTablo[j+pIndex].innerHTML) //si la premi�re case de la colonne souhait�e est plus grande qu'une autre
+			{//on inverse les trois cases			
+				tmp = pTablo[i].innerHTML;
+				pTablo[i].innerHTML = pTablo[j].innerHTML ; 
+				pTablo[j].innerHTML = tmp; 
+				tmp = pTablo[i+1].innerHTML;
+				pTablo[i+1].innerHTML = pTablo[j+1].innerHTML ; 
+				pTablo[j+1].innerHTML = tmp; 
+				tmp = pTablo[i+2].innerHTML;
+				pTablo[i+2].innerHTML = pTablo[j+2].innerHTML ; 
+				pTablo[j+2].innerHTML = tmp; 		
+			}
+	  return pTablo;
+	}
+	function classer(item)
+	{  //fait appel � la fonction de tri, en r�cup�rant toutes les cases et en comptant le nombre
+	  result = trier (item, document.getElementsByTagName("td"), document.getElementsByTagName("td").length);	  
+	}
+</script>
+</head>
+<body>
+	<table id="leTablo" border="1">
+		<tr ><th id="idNom" name="hdNom" class="styTete" onClick=classer(0)>NOM<th id="idPrenom"  onClick=classer(1)>Pr�nom<th id="idPasse"  onClick=classer(2)>Passe</tr>
+		<tr><td>BERNET<td>Alexandre<td>paAL01</tr>
+		<tr><td>PLORIN<td>Reynald<td>joRE01</tr>
+		<tr><td>LUBIN<td>Thomas<td>geTH01</tr>
+		<tr><td>BRICE<td>Nicolas<td>guNI01</tr>
+		<tr><td>PROZON<td>Jacques<td>roJA01</tr>
+		<tr><td>BULLET<td>Gilles<td>moGI01</tr>
+		<tr><td>MAZELLE<td>Sabrina<td>jeSA01</tr>
+		<tr><td>REPRO<td>Lucie<td>naLU01</tr>
+		<tr><td>FLORIN<td>Caroline<td>leCA01</tr>
+		<tr><td>BERNARD<td>Arnaud<td>caAR01</tr>
+	</table>
+</body>
+</html>
