@@ -32,3 +32,4 @@ __Login__:
 
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: license.txt
+(Peter Sirka on c jamais)

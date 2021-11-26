@@ -1,0 +1,34 @@
+{
+  "pid": 10184,
+  "stats": [
+    {
+      "id": null,
+      "version": {
+        "node": "v16.13.0",
+        "total": "3.4.13",
+        "app": "1.0.0"
+      },
+      "pid": 10184,
+      "thread": "",
+      "mode": "debug",
+      "overload": 0,
+      "date": "2021-11-26T15:48:07.072Z",
+      "memory": 11.61,
+      "rm": 3,
+      "fm": 4,
+      "wm": 0,
+      "mm": 0,
+      "om": 8,
+      "em": 0,
+      "dbrm": 0,
+      "dbwm": 0,
+      "usage": 6,
+      "requests": 30,
+      "pending": 0,
+      "errors": 0,
+      "timeouts": 0,
+      "uptime": 6,
+      "online": 0
+    }
+  ]
+}
