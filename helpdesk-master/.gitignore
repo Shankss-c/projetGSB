@@ -2,3 +2,6 @@ sftp-config.json
 public/components/*
 logs/
 tmp/
+.env
+debug.js.json
+debug.pid

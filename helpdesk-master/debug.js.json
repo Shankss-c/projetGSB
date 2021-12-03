@@ -1,5 +1,5 @@
 {
-  "pid": 8056,
+  "pid": 16416,
   "stats": [
     {
       "id": null,
@@ -8,12 +8,12 @@
         "total": "3.4.13",
         "app": "1.0.0"
       },
-      "pid": 8056,
+      "pid": 16416,
       "thread": "",
       "mode": "debug",
       "overload": 0,
-      "date": "2021-11-26T16:58:49.462Z",
-      "memory": 13.17,
+      "date": "2021-12-03T14:12:03.386Z",
+      "memory": 8.59,
       "rm": 0,
       "fm": 0,
       "wm": 0,
@@ -22,12 +22,12 @@
       "em": 0,
       "dbrm": 0,
       "dbwm": 0,
-      "usage": 4,
-      "requests": 34,
+      "usage": 0,
+      "requests": 0,
       "pending": 0,
       "errors": 0,
       "timeouts": 0,
-      "uptime": 17,
+      "uptime": 2,
       "online": 0
     }
   ]

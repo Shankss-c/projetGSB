@@ -2,10 +2,9 @@ name                      : HelpDesk
 version                   : 1.0.0
 author                    : Esteban Gonzales	Jeremy Aubry
 
-url                       : http://localhost:8080
+//url                       : http://localhost:8080
 
 // IMPORTANT: update the connection string below
-database                  : postgre://postgres:Shanx69gz@127.0.0.1:5435/helpdesk
 
 // Custom SMTP settings
 
@@ -15,7 +14,9 @@ mail-address-from         : support@totaljs.com
 
 auth.cookie               : __user
 auth.secret               : HeLlUser
-
+default_ip : auto
+default_port: auto
+default_image_converter: im
 // Gmail SMTP settings
 // mail-smtp                : smtp.gmail.com
 // mail-smtp-options        : {"port":465,"secure":true,"user":"ENTER_YOUR_EMAIL","password":"ENTER_YOUR_PASSWORD","rejectUnauthorized":true}

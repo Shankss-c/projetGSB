@@ -1,2 +1,3 @@
 // Database initialization
-require('sqlagent/pg').init(CONFIG('database'));
+require('sqlagent/pg').init(process.env.DATABASE);
+
